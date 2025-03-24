@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-
-   
-        <p> <a href="https://docs.google.com/forms/d/e/1FAIpQLScQ7BPeLUJHbGJYlbDigbM--csq7mY4ZlY3t7PPMD3wRbjWHw/viewform?usp=dialog"> formulář </a> </p>
-        <p> <iframe width="600px"; height="600px"; src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSU6rZ1IEPqqwh7Wf1oRuBVkV7KsBsV_xvbatbpRyuDQni5vxax6A7GsoGhyOd-H-VvxtP7k-oSb1t5/pubhtml?gid=906745546&single=true"> </iframe> </p>
-            
-         <!-- Pruh s názvem -->
-    <div class="header">
-        Moje Stránka
-    </div>
-
-    <!-- Pohyblivé logo -->
-    <img src="https://via.placeholder.com/100" alt="Logo" class="logo">
-
-    <div>
-        <h1>Vítejte na mé stránce!</h1>
-        <p>Text na stránce je psán v patkovém písmu, jako je Times nebo Georgia.</p>
-    </div>
-
-</body>
-</html>
-
-<style>
+    <style>
+        body {
+          margin: 0; /* Zruší defaultní okraje */
+          padding: 0;
+          height: 200vh; /* Nastaví výšku stránky na dvojnásobek výšky okna */
+        }
+      </style>
+    <style>
         /* Globální styly */
         body {
             font-family: 'Times New Roman', Times, Georgia, serif;
@@ -38,7 +24,7 @@
 
         /* Pruh s názvem */
         .header {
-            background-color: #4CAF50;
+            background-color: #d27cda;
             color: white;
             text-align: center;
             padding: 20px;
@@ -47,26 +33,50 @@
         }
 
         .header:hover {
-            background-color: #3e8e41;
+            background-color: #c506ff;
         }
 
         /* Pohyblivé logo */
-        .logo {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            animation: moveLogo 5s linear infinite;
-        }
+        body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-        @keyframes moveLogo {
-            0% {
-                left: 20px;
-            }
-            50% {
-                left: 80%;
-            }
-            100% {
-                left: 20px;
-            }
-        }
-    </style>
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrum stránky */
+    animation: moveLogo 5s infinite; /* Animace trvá 5 sekund a pouze jednou */
+}
+
+@keyframes moveLogo {
+    0% {
+        left: 50%; /* Začátek ve středu */
+    }
+    100% {
+        left: 100%; /* Konec na pravé straně */
+    }
+}
+</style>
+
+            
+         <!-- Pruh s názvem -->
+    <div class="header">
+        $uicideboy$
+    </div>
+<div><!-- Pohyblivé logo -->
+    <img src="https://th.bing.com/th/id/OIP.hUog3aDaSfgMu4qjjgUdjQHaFL?rs=1&pid=ImgDetMain" alt="Logo" class="logo">
+</div>
+    
+    <div>
+        <h1><a href="https://docs.google.com/forms/d/e/1FAIpQLScQ7BPeLUJHbGJYlbDigbM--csq7mY4ZlY3t7PPMD3wRbjWHw/viewform?usp=dialog"> DOTAZNÍK ZDE </a></h1>
+        <p>výsledky dotazníku:</p>
+    </div>
+    <p> <iframe width="600px"; height="600px"; src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRm3lMaptJupq6gXJ6ezUKqyMb_pM9v9dX-9TBKfpTXH21EdoKqGPKbEIPxvWsg4hcDCnqcDVVoNbi/pubhtml?gid=1181634185&single=true"> </iframe> 
+     </p>
+
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+        <p> <a href="https://docs.google.com/forms/d/e/1FAIpQLScQ7BPeLUJHbGJYlbDigbM--csq7mY4ZlY3t7PPMD3wRbjWHw/viewform?usp=dialog"> formulář </a> </p>
+        <p> <iframe width="600px"; height="600px"; src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSU6rZ1IEPqqwh7Wf1oRuBVkV7KsBsV_xvbatbpRyuDQni5vxax6A7GsoGhyOd-H-VvxtP7k-oSb1t5/pubhtml?gid=906745546&single=true"> </iframe> </p>
+            
+         <!-- Pruh s názvem -->
+    <div class="header">
+        Moje Stránka
+    </div>
+
+    <!-- Pohyblivé logo -->
+    <img src="https://via.placeholder.com/100" alt="Logo" class="logo">
+
+    <div>
+        <h1>Vítejte na mé stránce!</h1>
+        <p>Text na stránce je psán v patkovém písmu, jako je Times nebo Georgia.</p>
+    </div>
+
+</body>
+</html>
+
+<style>
+        /* Globální styly */
+        body {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Pruh s názvem */
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Pohyblivé logo */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            animation: moveLogo 5s linear infinite;
+        }
+
+        @keyframes moveLogo {
+            0% {
+                left: 20px;
+            }
+            50% {
+                left: 80%;
+            }
+            100% {
+                left: 20px;
+            }
+        }
+    </style>
